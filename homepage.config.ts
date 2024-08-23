@@ -2,7 +2,7 @@ import type { NavGroup } from '~/types/nav'
 
 const author = {
     name: 'York Chou',
-    avatar: 'https://yorkchou.net/assets/images/profile2.png',
+    avatar: '/profile.png',
     email: 'hi@ykc.im',
     homepage: 'https://ykc.im',
 }
