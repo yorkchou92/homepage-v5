@@ -14,10 +14,10 @@ function getPostTime(date: string) {
         return formatDistanceToNow(postDate, { addSuffix: true, locale: zhCN })
     }
     else if (postDate.getFullYear() === now.getFullYear()) {
-        return format(postDate, 'M月d日')
+        return format(postDate, 'M-d')
     }
     else {
-        return format(postDate, 'yy年M月d日')
+        return format(postDate, 'yy-M-d')
     }
 }
 </script>

@@ -9,7 +9,7 @@ const author = {
 
 export default {
     title: 'York Chou',
-    description: 'Simple, Creative.',
+    description: 'Webmaster | Copywriter | Photographer',
     author,
     language: 'zh-CN',
     timezone: 'Asia/Shanghai',
