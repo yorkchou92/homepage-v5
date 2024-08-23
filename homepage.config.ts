@@ -9,12 +9,13 @@ const author = {
 
 export default {
     title: 'York Chou',
-    description: 'Simple,Creative',
+    description: 'Simple, Creative.',
     author,
     language: 'zh-CN',
     timezone: 'Asia/Shanghai',
     favicon: '/icon.png',
     url: 'https://ykc.im',
+    blogAtom: 'https://yorkchou.com/feed/atom/',
     footer: {
         copyright: `York Chou © ${new Date().getFullYear()}`,
         message: 'All rights reserved.',
@@ -31,12 +32,10 @@ export default {
             title: '',
             list: [
                 { icon: 'ph:house-duotone', title: 'Home', link: '/' },
-                { icon: 'ph:pen-nib-duotone', title: 'BLog', link: 'https://yorkchou.com', external: true },
+                { icon: 'ph:pen-nib-duotone', title: 'Writings', link: '/article' },
                 // { icon: "ph:pen-nib-duotone", title: "文章", link: "https://blog.zhilu.cyou", external: true },
                 // { icon: "ph:code-duotone", title: "项目", link: "/project" },
                 { icon: 'ph:code-duotone', title: 'Projects', link: 'https://yorkchou.net/projects.html', external: true },
-                { icon: 'ph:globe-duotone', title: 'Friends', link: '/site' },
-                { icon: 'ph:files-duotone', title: 'Logs', link: '/log' },
             ],
         },
         {

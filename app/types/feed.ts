@@ -1,6 +1,8 @@
 export default interface FeedProps {
     [key: string]: any
-    title: string
+    title: {
+        '#text': string
+    }
     link: {
         $href: string
     }
