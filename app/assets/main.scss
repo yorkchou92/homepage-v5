@@ -55,7 +55,7 @@ mark {
 }
 
 .mark-t {
-    background: linear-gradient(var(--c-text-3), var(--c-text-3)) no-repeat left bottom / 100% 0.3em;
+    background: linear-gradient(var(--c-text-4), var(--c-text-4)) no-repeat left bottom / 100% 0.5em;
     text-decoration: none;
     color: var(--c-text-2);
     transition: 0.2s;
@@ -68,12 +68,12 @@ mark {
     &:hover {
         background: linear-gradient(var(--c-primary-t), var(--c-primary-t)) no-repeat left bottom / 100% 0.3em;
         color: var(--c-text-t);
-        background-size: 100% 50%;
+        background-size: 100% 10%;
     }
 }
 
 .mark-m {
-    background: linear-gradient(var(--c-text-3), var(--c-text-3)) no-repeat left bottom / 100% 0.3em;
+    background: linear-gradient(var(--c-text-4), var(--c-text-4)) no-repeat left bottom / 100% 0.5em;
     text-decoration: none;
     color: var(--c-text-2);
     transition: 0.2s;
@@ -86,12 +86,12 @@ mark {
     &:hover {
         background: linear-gradient(var(--c-primary-m), var(--c-primary-m)) no-repeat left bottom / 100% 0.3em;
         color: var(--c-text-m);
-        background-size: 100% 50%;
+        background-size: 100% 10%;
     }
 }
 
 .mark-x {
-    background: linear-gradient(var(--c-text-3), var(--c-text-3)) no-repeat left bottom / 100% 0.3em;
+    background: linear-gradient(var(--c-text-4), var(--c-text-4)) no-repeat left bottom / 100% 0.5em;
     text-decoration: none;
     color: var(--c-text-2);
     transition: 0.2s;
@@ -104,12 +104,12 @@ mark {
     &:hover {
         background: linear-gradient(var(--c-primary-x), var(--c-primary-x)) no-repeat left bottom / 100% 0.3em;
         color: var(--c-text-x);
-        background-size: 100% 50%;
+        background-size: 100% 10%;
     }
 }
 
 .mark-i {
-    background: linear-gradient(var(--c-text-3), var(--c-text-3)) no-repeat left bottom / 100% 0.3em;
+    background: linear-gradient(var(--c-text-4), var(--c-text-4)) no-repeat left bottom / 100% 0.5em;
     text-decoration: none;
     color: var(--c-text-2);
     transition: 0.2s;
@@ -122,12 +122,12 @@ mark {
     &:hover {
         background: linear-gradient(var(--c-primary-i), var(--c-primary-i)) no-repeat left bottom / 100% 0.3em;
         color: var(--c-text-i);
-        background-size: 100% 50%;
+        background-size: 100% 10%;
     }
 }
 
 .mark-g {
-    background: linear-gradient(var(--c-text-3), var(--c-text-3)) no-repeat left bottom / 100% 0.3em;
+    background: linear-gradient(var(--c-text-4), var(--c-text-4)) no-repeat left bottom / 100% 0.5em;
     text-decoration: none;
     color: var(--c-text-2);
     transition: 0.2s;
@@ -140,7 +140,7 @@ mark {
     &:hover {
         background: linear-gradient(var(--c-primary-g), var(--c-primary-g)) no-repeat left bottom / 100% 0.3em;
         color: var(--c-text-g);
-        background-size: 100% 50%;
+        background-size: 100% 10%;
     }
 }
 
