@@ -2,6 +2,11 @@ $breakpoint-mobile: 768px;
 
 @mixin dark-theme {
     --c-text-1: hsl(0deg 0% 90%);
+    --c-text-t: hsl(200, 74%, 51%);
+    --c-text-m: hsl(241, 85%, 66%);
+    --c-text-x: hsl(203, 89%, 53%);
+    --c-text-i: hsl(326, 57%, 48%);
+    --c-text-g: hsl(0, 0%, 20%);
     --c-text-2: hsl(0deg 0% 50%);
     --c-text-3: hsl(0deg 0% 40%);
     --c-bg-1: hsl(0deg 0% 0%);
@@ -10,6 +15,11 @@ $breakpoint-mobile: 768px;
     --c-border: hsl(0deg 0% 20%);
     --c-bg-a50: hsl(0deg 0% 0% / 50%);
     --c-primary-1: hsl(220deg 100% 70%);
+    --c-primary-t: hsl(199, 100%, 85%);
+    --c-primary-m: hsl(240, 100%, 94%);
+    --c-primary-x: hsl(205, 100%, 91%);
+    --c-primary-i: hsl(326, 100%, 92%);
+    --c-primary-g: hsl(0, 0%, 80%);
     --c-primary-2: hsl(210deg 100% 70% / 30%);
     --c-primary-3: hsl(215deg 100% 60% / 20%);
     --c-primary-soft: hsl(220deg 100% 95% / 10%);
@@ -18,6 +28,11 @@ $breakpoint-mobile: 768px;
 :root,
 .light {
     --c-text-1: hsl(0deg 0% 20%);
+    --c-text-t: hsl(200, 74%, 51%);
+    --c-text-m: hsl(241, 85%, 66%);
+    --c-text-x: hsl(203, 89%, 53%);
+    --c-text-i: hsl(326, 57%, 48%);
+    --c-text-g: hsl(0, 0%, 20%);
     --c-text-2: hsl(0deg 0% 50%);
     --c-text-3: hsl(0deg 0% 70%);
     --c-bg-1: hsl(0deg 0% 100%);
@@ -26,6 +41,11 @@ $breakpoint-mobile: 768px;
     --c-border: hsl(200deg 20% 90%);
     --c-bg-a50: hsl(0deg 0% 100% / 50%);
     --c-primary-1: hsl(220deg 100% 55%);
+    --c-primary-t: hsl(199, 100%, 85%);
+    --c-primary-m: hsl(240, 100%, 94%);
+    --c-primary-x: hsl(205, 100%, 91%);
+    --c-primary-i: hsl(326, 100%, 92%);
+    --c-primary-g: hsl(0, 0%, 80%);
     --c-primary-2: hsl(210deg 100% 50% / 30%);
     --c-primary-3: hsl(215deg 100% 60% / 15%);
     --c-primary-soft: hsl(240deg 20% 20% / 5%);

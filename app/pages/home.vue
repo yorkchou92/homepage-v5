@@ -2,7 +2,7 @@
 useHead({ title: '' })
 definePageMeta({
     alias: ['/'],
-    title: '主页',
+    title: 'Home',
 })
 const appConfig = useAppConfig()
 </script>
@@ -12,60 +12,75 @@ const appConfig = useAppConfig()
     <div class="wrapper">
         <ZField label="<span style='font-size: 3rem;'>👋</span>">
             <h1 style="font-size: 3rem;">
-                你好，<br>我是<mark>{{ appConfig.author.name }}</mark>
+                Hello,<br>I'm <mark>{{ appConfig.author.name }}</mark>
             </h1>
             <p class="desc">
                 {{ appConfig.description }}
             </p>
             <div>
-                <ZButton icon="ph:files-duotone" to="https://blog.zhilu.cyou/">
-                    博客
-                </ZButton>
-                <ZButton icon="ph:github-logo-duotone" to="https://github.com/L33Z22L11">
-                    GitHub
-                </ZButton>
+              <ZButton icon="ph:files-duotone" to="https://yorkchou.com">
+                Blog
+              </ZButton>
+              <ZButton icon="ph:code-duotone" to="https://yorkchou.net/projects.html">
+                Projects
+              </ZButton>
             </div>
         </ZField>
 
-        <ZField label="介绍">
-            <p>
-                <ZLink to="https://github.com/xiyou-linuxer">
-                    西邮&thinsp;Linux&thinsp;兴趣小组
-                </ZLink> 成员，Windows 11 和 Arch Linux 用户。
-            </p>
+        <ZField label="i am">
+          <p>
+            Webmaster of
+          <ZLink to="https://pj.ax">
+            PJ.AX
+          </ZLink>
+          </p>
+          <p>
+            Operator of
+            <ZLink to="https://ix.md">
+              Information eXchange
+            </ZLink>
+          </p>
+          <p>
+            Founder of
+            <ZLink to="https://gallery.gy">
+              York Chou Photography Studio
+            </ZLink>
+          </p>
         </ZField>
 
-        <ZField label="关于网站">
+        <ZField label="about me">
             <p>
-                自2024年6月1日开始重构，目前还在修缮中。
+              Based in <b>Shanghai, China</b>. I am an operations engineer and a father. My career journey includes roles as a full-time editor and a telecommunications engineer. These experiences have profoundly shaped my current self.
+            </p>
+            <p>
+              Photography is my passion, with a focus on portrait and landscape. I have a particular affinity for <b>Polaroids</b>, as capturing beautiful moments offers me immense joy.
+            </p>
+            <p>
+              In my leisure time, I indulge in watching TV shows, which is my preferred method of relaxation. During my commute, I tune into <b>87.9 HitFM</b>, and my favorite song is <b>"When We Were Young"</b> by Adele.
             </p>
         </ZField>
-        <ZField label="开源衍生">
+        <ZField label="find me at">
             <p>
-                感谢
-                <ZBadge img="https://cdn.libravatar.org/avatar/ecb2ea87c4532f007838d86d02798f89" to="https://github.com/KazariEX">
-                    KazariEX
-                </ZBadge>
-                <ZBadge img="https://7.isyangs.cn/8/655c9835780a0-8.jpg" to="https://github.com/isYangs">
-                    isYangs
-                </ZBadge>
-                等众多朋友为个人主页提供帮助。<br>
-                主页开源在
-                <ZLink to="https://github.com/L33Z22L11/homepage-v5" icon="ph:github-logo-duotone">
-                    L33Z22L11/homepage-v5
-                </ZLink>上。
+                <ZRawLink to="https://t.me/YorkChou">
+                  <span class="mark-t"><Icon name="ph:telegram-logo" /> <b>Telegram</b></span>
+                </ZRawLink>
+                &emsp;
+                <ZRawLink to="https://ix.md/@admin">
+                  <span class="mark-m"><Icon name="ph:mastodon-logo" /> <b>Mastodon</b></span>
+                </ZRawLink>
+                &emsp;
+                <ZRawLink to="https://x.com/York_Chou">
+                  <span class="mark-x"><Icon name="ph:x-logo" /> <b>X</b></span>
+                </ZRawLink>
             </p>
             <p>
-                欢迎使用、参考样式：<br>
-                <ZBadge rel="nofollow" img="https://image.m-c.top/?/images/2024/07/21/iyt3mhQCDe/b_a3f6e95501bcc4ce64c19c63a1211bcd.png" to="https://oio.mckfs.com/">
-                    Oiolosse MC服
-                </ZBadge>
-                <ZBadge rel="nofollow" img="https://bu.dusays.com/2024/07/13/66929d307adb9.png" to="https://henrywhu.cn/">
-                    Henry Moreau
-                </ZBadge>
-                <ZBadge rel="nofollow" img="https://api-space.tnxg.top/avatar?s=qq" to="https://tnxg.top/">
-                    天翔TNXG
-                </ZBadge>
+              <ZRawLink to="https://www.instagram.com/york_chou/">
+                <span class="mark-i"><Icon name="ph:instagram-logo" /> <b>Instagram</b></span>
+              </ZRawLink>
+              &emsp;
+              <ZRawLink to="https://github.com/yorkchou92">
+                <span class="mark-g"><Icon name="ph:github-logo" /> <b>Github</b></span>
+              </ZRawLink>
             </p>
         </ZField>
     </div>

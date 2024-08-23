@@ -14,14 +14,14 @@ const handleError = () => clearError({ redirect: '/' })
         <ZHeader />
         <main>
             <div>
-                <ZTitle>出错了</ZTitle>
+                <ZTitle>Error</ZTitle>
                 <ZField :label="error?.statusCode?.toString()">
                     <div class="error-message">
                         <pre>{{ error?.message }}</pre>
                     </div>
                     <br>
                     <ZButton @click="handleError">
-                        返回主页
+                        Back to home
                     </ZButton>
                 </ZField>
             </div>
