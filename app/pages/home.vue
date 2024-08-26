@@ -24,6 +24,9 @@ const appConfig = useAppConfig()
               <ZButton icon="ph:code-duotone" to="https://yorkchou.net/projects.html">
                 Projects
               </ZButton>
+              <ZButton icon="ph:read-cv-logo" to="https://yk.ci">
+                CV
+              </ZButton>
             </div>
         </ZField>
 
@@ -69,8 +72,8 @@ const appConfig = useAppConfig()
                   <span class="mark-m"><Icon name="ph:mastodon-logo" /> <b>Mastodon</b></span>
                 </ZRawLink>
                 &emsp;
-                <ZRawLink to="https://x.com/York_Chou">
-                  <span class="mark-x"><Icon name="ph:x-logo" /> <b>X</b></span>
+                <ZRawLink to="https://weibo.com/1597548010">
+                  <span class="mark-x"><Icon name="mdi:sina-weibo" /> <b>Weibo</b></span>
                 </ZRawLink>
             </p>
             <p>

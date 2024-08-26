@@ -43,7 +43,7 @@ export default {
             list: [
                 { icon: 'ph:telegram-logo', title: 'Telegram', link: 'https://t.me/YorkChou', external: true },
                 { icon: 'ph:mastodon-logo', title: 'Mastodon', link: 'https://ix.md/@admin', external: true },
-                { icon: 'ph:x-logo', title: 'X', link: 'https://x.com/York_Chou', external: true },
+                { icon: 'mdi:sina-weibo', title: 'Weibo', link: 'https://weibo.com/1597548010', external: true },
                 { icon: 'ph:instagram-logo', title: 'Instagram', link: 'https://www.instagram.com/york_chou/', external: true },
                 { icon: 'ph:github-logo', title: 'Github', link: 'https://github.com/yorkchou92', external: true },
             ],
