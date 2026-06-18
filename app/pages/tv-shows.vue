@@ -8,7 +8,7 @@ const { data, error, status } = useLazyFetch<TVShow[]>('/api/tv-shows')
 </script>
 
 <template>
-  <ZTitle icon="📺">
+  <ZTitle>
     <span class="badge-text">Currently Watching</span>
   </ZTitle>
 
@@ -26,7 +26,6 @@ const { data, error, status } = useLazyFetch<TVShow[]>('/api/tv-shows')
       </div>
       <div class="content">
         <h3>{{ show.title }}</h3>
-        <p class="description">{{ show.description }}</p>
       </div>
     </div>
   </div>
@@ -35,14 +34,14 @@ const { data, error, status } = useLazyFetch<TVShow[]>('/api/tv-shows')
 <style scoped lang="scss">
 .shows-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 16px;
 }
 
 .show-card {
   display: flex;
   flex-direction: column;
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
   background: var(--c-bg-soft);
   transition: all 0.3s ease;
@@ -72,7 +71,7 @@ const { data, error, status } = useLazyFetch<TVShow[]>('/api/tv-shows')
       width: 100%;
       height: 100%;
       color: var(--c-text-3);
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 
@@ -80,11 +79,11 @@ const { data, error, status } = useLazyFetch<TVShow[]>('/api/tv-shows')
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 12px;
+    padding: 8px;
 
     h3 {
-      margin: 0 0 8px 0;
-      font-size: 16px;
+      margin: 0;
+      font-size: 13px;
       font-weight: 600;
       line-height: 1.3;
       color: var(--c-text-1);

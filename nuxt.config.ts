@@ -25,9 +25,9 @@ export default defineNuxtConfig({
 
     runtimeConfig: {
         public: {
-            traktClientId: process.env.NUXT_PUBLIC_TRAKT_CLIENT_ID || '',
+            traktClientId: '',
         },
-        tmdbApiKey: process.env.NUXT_TMDB_API_KEY || '',
+        tmdbApiKey: '',
     },
 
     compatibilityDate: '2024-08-03',

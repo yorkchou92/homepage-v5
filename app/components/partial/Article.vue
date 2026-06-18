@@ -42,10 +42,11 @@ function getPostTime(date: string) {
 .article-card {
     padding: 8px;
     border-radius: 8px;
+    background: var(--c-bg-2);
     transition: all 0.2s;
 
     &:hover {
-        background-color: var(--c-primary-soft);
+        background: var(--c-bg-3);
     }
 
     >* {

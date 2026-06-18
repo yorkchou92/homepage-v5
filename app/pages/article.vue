@@ -8,7 +8,7 @@ const articles = computed(() => data.value.slice(0, 11))
 </script>
 
 <template>
-    <ZTitle icon="👀">
+    <ZTitle>
         <span class="badge-text">Read more at my blog
             <ZRawLink to="https://yorkchou.com/"><mark>Hello World</mark></ZRawLink>
         </span>

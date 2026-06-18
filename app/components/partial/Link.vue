@@ -1,9 +1,12 @@
 <script setup lang="ts">
-defineProps<{ to?: string }>()
+defineProps<{
+  to?: string
+  noColor?: boolean
+}>()
 </script>
 
 <template>
-    <ZRawLink class="z-link" :to="to">
+    <ZRawLink class="z-link" :class="{ 'no-color': noColor }" :to="to">
         <slot />
     </ZRawLink>
   <Icon v-if="isExtLink(to)" class="external" name="ph:arrow-up-right" />
@@ -18,6 +21,10 @@ defineProps<{ to?: string }>()
     &:hover {
         border-radius: 0.3em;
         background-size: 100% 100%;
+    }
+
+    &.no-color {
+        color: inherit;
     }
 }
 

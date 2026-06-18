@@ -21,11 +21,8 @@ const appConfig = useAppConfig()
               <ZButton icon="ph:files-duotone" to="https://yorkchou.com">
                 Blog
               </ZButton>
-              <ZButton icon="ph:code-duotone" to="https://yorkchou.net/projects.html">
-                Projects
-              </ZButton>
-              <ZButton icon="ph:read-cv-logo" to="https://yk.ci">
-                CV
+              <ZButton icon="ph:code-duotone" to="https://probe.icu">
+                Probe
               </ZButton>
             </div>
         </ZField>
@@ -35,7 +32,10 @@ const appConfig = useAppConfig()
             Webmaster of
           <ZLink to="https://pj.ax">
             PJ.AX
-          </ZLink>
+          </ZLink> and
+         <ZLink to="https://ip.uy">
+            IP.UY
+         </ZLink>
           </p>
           <p>
             Operator of
@@ -59,7 +59,7 @@ const appConfig = useAppConfig()
               Photography is my passion, with a focus on portrait and landscape. I have a particular affinity for <b>Polaroids</b>, as capturing beautiful moments offers me immense joy.
             </p>
             <p>
-              In my leisure time, I indulge in watching TV shows, which is my preferred method of relaxation. During my commute, I tune into <b>87.9 HitFM</b>, and my favorite song is <b>"When We Were Young"</b> by Adele.
+              In my leisure time, I indulge in watching <ZLink to="/tv-shows" no-color class="tv-link"><b>TV shows</b></ZLink>, which is my preferred method of relaxation. My commute is usually accompanied by a playlist on <b>Apple Music</b>, and my favorite song is <b>"When We Were Young"</b> by Adele.
             </p>
         </ZField>
         <ZField label="find me at">

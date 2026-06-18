@@ -46,7 +46,7 @@ async function getTraktWatching(clientId: string, username: string): Promise<Tra
 
 async function getTMDBShowDetails(tmdbId: number, apiKey: string): Promise<TMDBShow> {
   const resp = await fetch(
-    `https://api.themoviedb.org/3/tv/${tmdbId}?api_key=${apiKey}&language=zh-CN`,
+    `https://api.themoviedb.org/3/tv/${tmdbId}?api_key=${apiKey}&language=en-US`,
   )
 
   if (!resp.ok) {
@@ -93,9 +93,9 @@ export default defineCachedEventHandler(async (_event) => {
           id: String(item.show.ids.trakt),
           title: tmdbDetails.name,
           poster: tmdbDetails.poster_path
-            ? `https://image.tmdb.org/t/p/w342${tmdbDetails.poster_path}`
+            ? `https://image.tmdb.org/t/p/w154${tmdbDetails.poster_path}`
             : '',
-          description: tmdbDetails.overview,
+          description: '',
           tmdbId,
         }
       }),
@@ -112,6 +112,6 @@ export default defineCachedEventHandler(async (_event) => {
     })
   }
 }, {
-  maxAge: 60 * 60 * 6,
+  maxAge: 60 * 30, // 30 分钟缓存
 })
 
