@@ -24,10 +24,10 @@ export default defineNuxtConfig({
     appConfig: homepageConfig,
 
     runtimeConfig: {
-        tmdbApiKey: '',
         public: {
-            traktClientId: '',
+            traktClientId: process.env.NUXT_PUBLIC_TRAKT_CLIENT_ID || '',
         },
+        tmdbApiKey: process.env.NUXT_TMDB_API_KEY || '',
     },
 
     compatibilityDate: '2024-08-03',
