@@ -35,6 +35,7 @@ export default {
                 { icon: 'ph:pen-nib-duotone', title: 'Writings', link: '/article' },
                 { icon: 'ph:code-duotone', title: 'Projects', link: '/projects' },
                 { icon: 'ph:film-slate-duotone', title: 'TV Shows', link: '/tv-shows' },
+                { icon: 'ph:hard-drives-duotone', title: 'Nodes', link: '/nodes' },
                 // { icon: "ph:pen-nib-duotone", title: "文章", link: "https://blog.zhilu.cyou", external: true },
                 // { icon: "ph:code-duotone", title: "项目", link: "/project" },
             ],
