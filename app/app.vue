@@ -6,6 +6,7 @@
             <NuxtPage />
         </main>
     </div>
+    <AudioPlayer />
 </template>
 
 <style lang="scss">

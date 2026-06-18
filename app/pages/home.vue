@@ -5,6 +5,12 @@ definePageMeta({
     title: 'Home',
 })
 const appConfig = useAppConfig()
+
+const audioPlayerStore = useAudioPlayerStore()
+
+const playSong = () => {
+  audioPlayerStore.play()
+}
 </script>
 
 <template>
@@ -56,10 +62,10 @@ const appConfig = useAppConfig()
               Based in <b>Shanghai, China</b>. I am an operations engineer and a father. My career journey includes roles as a full-time editor and a telecommunications engineer. These experiences have profoundly shaped my current self.
             </p>
             <p>
-              Photography is my passion, with a focus on portrait and landscape. I have a particular affinity for <b>Polaroids</b>, as capturing beautiful moments offers me immense joy.
+              Photography is my passion, with a focus on portrait and landscape. I have a particular affinity for <ZLink to="/moments" no-color><b>Polaroids</b></ZLink>, as capturing beautiful moments offers me immense joy.
             </p>
             <p>
-              In my leisure time, I indulge in watching <ZLink to="/tv-shows" no-color class="tv-link"><b>TV shows</b></ZLink>, which is my preferred method of relaxation. My commute is usually accompanied by a playlist on <b>Apple Music</b>, and my favorite song is <b>"When We Were Young"</b> by Adele.
+              In my leisure time, I indulge in watching <ZLink to="/tv-shows" no-color class="tv-link"><b>TV shows</b></ZLink>, which is my preferred method of relaxation. My commute is usually accompanied by a playlist on <b>Apple Music</b>, and my favorite song is <b><span class="song-link" @click="playSong">"When We Were Young"</span></b> by Adele.
             </p>
         </ZField>
         <ZField label="find me at">
@@ -104,5 +110,17 @@ const appConfig = useAppConfig()
     margin: 1rem 0;
     font-size: 1.5rem;
     color: var(--c-text-2);
+}
+
+.song-link {
+    cursor: pointer;
+    background: linear-gradient(var(--c-primary-3), var(--c-primary-3)) no-repeat center bottom / 100% 0.1em;
+    color: inherit;
+    transition: background-size 0.2s;
+
+    &:hover {
+        border-radius: 0.3em;
+        background-size: 100% 100%;
+    }
 }
 </style>
