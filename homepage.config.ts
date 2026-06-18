@@ -33,6 +33,7 @@ export default {
             list: [
                 { icon: 'ph:house-duotone', title: 'Home', link: '/' },
                 { icon: 'ph:pen-nib-duotone', title: 'Writings', link: '/article' },
+                { icon: 'ph:film-slate-duotone', title: 'TV Shows', link: '/tv-shows' },
                 // { icon: "ph:pen-nib-duotone", title: "文章", link: "https://blog.zhilu.cyou", external: true },
                 // { icon: "ph:code-duotone", title: "项目", link: "/project" },
                 { icon: 'ph:code-duotone', title: 'Projects', link: 'https://yorkchou.net/projects.html', external: true },

@@ -23,6 +23,13 @@ export default defineNuxtConfig({
 
     appConfig: homepageConfig,
 
+    runtimeConfig: {
+        tmdbApiKey: '',
+        public: {
+            traktClientId: '',
+        },
+    },
+
     compatibilityDate: '2024-08-03',
 
     components: [
