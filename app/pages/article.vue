@@ -15,7 +15,7 @@ const articles = computed(() => data.value.slice(0, 11))
     </ZTitle>
 
     <template v-if="status === 'pending'">
-        <p>加载中…</p>
+        <p>Loading…</p>
     </template>
     <template v-else-if="status === 'error'">
         <p>{{ error }}</p>

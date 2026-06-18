@@ -88,7 +88,7 @@ function shortOS(os: string): string {
   </ZTitle>
 
   <template v-if="pending">
-    <p>加载中…</p>
+    <p>Loading…</p>
   </template>
   <template v-else-if="errorMsg">
     <p>{{ errorMsg }}</p>

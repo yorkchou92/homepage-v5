@@ -21,8 +21,8 @@ const appConfig = useAppConfig()
               <ZButton icon="ph:files-duotone" to="https://yorkchou.com">
                 Blog
               </ZButton>
-              <ZButton icon="ph:code-duotone" to="https://probe.icu">
-                Probe
+              <ZButton icon="ph:images" to="https://gallery.gy">
+                Gallery
               </ZButton>
             </div>
         </ZField>
@@ -45,8 +45,8 @@ const appConfig = useAppConfig()
           </p>
           <p>
             Founder of
-            <ZLink to="https://gallery.gy">
-              York Chou Photography Studio
+            <ZLink to="https://lastpill.com">
+              Last Pill Studio
             </ZLink>
           </p>
         </ZField>
