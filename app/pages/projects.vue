@@ -41,6 +41,12 @@ const projects: Project[] = [
     link: 'https://yk.ci'
   },
   {
+    name: 'IP.UY',
+    description: 'An IP address information query API based on echoip.',
+    tag: 'Service',
+    link: 'https://ip.uy'
+  },
+  {
     name: 'PJ.AX',
     description: 'CDN for pjax.',
     tag: 'Service',
@@ -102,7 +108,7 @@ const projects: Project[] = [
   },
   {
     name: 'Root',
-    description: 'Haven\'t decided what to do with this site yet, so here\'s a cool-looking page for now.',
+    description: 'A terminal-inspired theme page for Komari Probe.',
     tag: 'Experimental',
     link: 'https://root.al'
   },
@@ -123,6 +129,12 @@ const projects: Project[] = [
     description: 'Information Exchange - A mastodon instance.',
     tag: 'Experimental',
     link: 'https://ix.md'
+  },
+  {
+    name: 'PN.GL',
+    description: 'An image hosting system currently for personal use only.',
+    tag: 'Experimental',
+    link: 'https://pn.gl'
   },
   {
     name: 'Last Pill',
@@ -197,13 +209,23 @@ const projects: Project[] = [
 
   .card-main {
     flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
   }
 
   .title-row {
     display: flex;
-    align-items: center;
-    gap: 12px;
+    flex-direction: column;
+    gap: 4px;
     margin-bottom: 8px;
+
+    @media (min-width: 769px) {
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+    }
   }
 
   .project-name {
@@ -216,6 +238,7 @@ const projects: Project[] = [
   .project-link {
     font-size: 12px;
     color: var(--c-text-3);
+    word-break: break-all;
   }
 
   .project-description {
@@ -223,6 +246,8 @@ const projects: Project[] = [
     font-size: 14px;
     line-height: 1.6;
     color: var(--c-text-2);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .project-tag {
@@ -232,6 +257,7 @@ const projects: Project[] = [
     padding: 4px 8px;
     background: var(--c-bg);
     border-radius: 4px;
+    align-self: flex-start;
   }
 }
 </style>

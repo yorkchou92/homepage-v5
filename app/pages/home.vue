@@ -65,7 +65,7 @@ const playSong = () => {
               Photography is my passion, with a focus on portrait and landscape. I have a particular affinity for <ZLink to="/moments" no-color><b>Polaroids</b></ZLink>, as capturing beautiful moments offers me immense joy.
             </p>
             <p>
-              In my leisure time, I indulge in watching <ZLink to="/tv-shows" no-color class="tv-link"><b>TV shows</b></ZLink>, which is my preferred method of relaxation. My commute is usually accompanied by a playlist on <b>Apple Music</b>, and my favorite song is <b><span class="song-link" @click="playSong">"When We Were Young"</span></b> by Adele.
+              In my leisure time, I indulge in watching <ZLink to="/tv-shows" no-color class="tv-link"><b>TV shows</b></ZLink>, which is my preferred method of relaxation. My commute is usually accompanied by a playlist on <ZLink to="/listening" no-color class="music-link"><b>Apple Music</b></ZLink>, and my favorite song is <b><span class="song-link" @click="playSong">"When We Were Young"</span></b> by Adele.
             </p>
         </ZField>
         <ZField label="find me at">

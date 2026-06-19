@@ -45,8 +45,8 @@ onUnmounted(() => {
     />
 
     <Transition name="slide-up">
-      <div v-if="audioPlayerStore.isVisible" class="audio-player">
-        <div class="player-content">
+      <div v-if="audioPlayerStore.isVisible" class="audio-player" :class="{ minimized: audioPlayerStore.isMinimized }">
+        <div v-if="!audioPlayerStore.isMinimized" class="player-content">
           <div class="song-info">
             <div class="song-title">When We Were Young</div>
             <div class="song-artist">Adele</div>
@@ -70,11 +70,18 @@ onUnmounted(() => {
           </button>
         </div>
 
-        <div class="progress-bar">
+        <div v-if="!audioPlayerStore.isMinimized" class="progress-bar">
           <div
             class="progress-fill"
             :style="{ width: duration > 0 ? `${(currentTime / duration) * 100}%` : '0%' }"
           />
+        </div>
+
+        <!-- Minimized mode: only show pause button -->
+        <div v-if="audioPlayerStore.isMinimized" class="mini-player">
+          <button class="mini-button" @click="audioPlayerStore.pause">
+            <Icon name="ph:pause-fill" />
+          </button>
         </div>
       </div>
     </Transition>
@@ -93,6 +100,13 @@ onUnmounted(() => {
   overflow: hidden;
   z-index: 1000;
   backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+
+  &.minimized {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+  }
 }
 
 .player-content {
@@ -217,12 +231,54 @@ onUnmounted(() => {
   opacity: 0;
 }
 
+.mini-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+
+.mini-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--c-text-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: var(--c-bg-3);
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  .iconify {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .audio-player {
     bottom: 10px;
     right: 10px;
     left: 10px;
     width: auto;
+
+    &.minimized {
+      left: auto;
+      width: 56px;
+      height: 56px;
+    }
   }
 }
 </style>

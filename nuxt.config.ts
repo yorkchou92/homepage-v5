@@ -26,6 +26,8 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             traktClientId: '',
+            lastfmApiKey: '',
+            lastfmUsername: '',
         },
         tmdbApiKey: '',
     },
@@ -73,6 +75,12 @@ export default defineNuxtConfig({
         '@pinia/nuxt',
         '@vueuse/nuxt',
     ],
+
+    icon: {
+        serverBundle: {
+            collections: ['ph', 'mdi'],
+        },
+    },
 
     colorMode: {
         preference: 'system',
